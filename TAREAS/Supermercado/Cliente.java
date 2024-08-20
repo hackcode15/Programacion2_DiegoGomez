@@ -8,17 +8,17 @@ import java.util.*;
 public class Cliente extends Humane {
     
     private boolean mayorista;
-    private ArrayList<Producto> productosComprados;
+    private ArrayList<Producto> listaDeCompras;
     
     public Cliente(String nombre, String apellido, int dni, boolean mayorista){
         super(nombre, apellido, dni);
         this.mayorista = mayorista;
-        productosComprados = new ArrayList<Producto>();
+        listaDeCompras = new ArrayList<Producto>();
     }
     
     public void comprarProductos(Producto producto, int cantidad){
         if(producto.getStock() >= cantidad){
-            productosComprados.add(producto);
+            listaDeCompras.add(producto);
             producto.setCantidad(cantidad);
             
             if(producto.getStock() == cantidad){

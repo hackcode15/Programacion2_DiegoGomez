@@ -7,12 +7,12 @@ public class Compra {
 
     private Caja caja;
     private Cliente cliente;
-    private ArrayList<Producto> listaDeCompra;
+    private ArrayList<Producto> productosComprados;
     
     public Compra(Caja caja, Cliente cliente, ArrayList<Producto> listaDeCompra){
         this.caja = caja;
         this.cliente = cliente;
-        this.listaDeCompra = listaDeCompra;
+        this.productosComprados = listaDeCompra;
     }
     
     /*public static boolean hayStock(Producto producto){
@@ -27,11 +27,11 @@ public class Compra {
         
         System.out.println("Compra realizada:");
         
-        listaDeCompra.stream()
+        productosComprados.stream()
                 .map(p -> "Nombre: " + p.getNombre() + ", Precio: $" + p.getPrecio() + ", Cantidad: " + p.getCantidad())
                 .forEach(System.out::println);
         
-        double totalCompra = listaDeCompra.stream()
+        double totalCompra = productosComprados.stream()
                 .mapToDouble(p -> p.getPrecio() * p.getCantidad())
                 .sum();
         
