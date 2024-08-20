@@ -1,0 +1,6 @@
+org\bbdd\ejerciciosupermercado\vista\GUI.class
+org\bbdd\ejerciciosupermercado\vista\PanelPrincipal.class
+org\bbdd\ejerciciosupermercado\App.class
+org\bbdd\ejerciciosupermercado\modelo\ProductoDAO.class
+org\bbdd\ejerciciosupermercado\modelo\ConectaBD.class
+org\bbdd\ejerciciosupermercado\modelo\Producto.class
