@@ -1,4 +1,4 @@
-package tarea;
+package tarea.supermercado;
 
 import lombok.*;
 import java.util.*;
@@ -6,6 +6,8 @@ import java.util.*;
 @NoArgsConstructor
 @Getter @Setter
 public class Cliente extends Humane {
+    
+    public static int pruebaConstante;
     
     private boolean mayorista;
     private ArrayList<Producto> listaDeCompras;
@@ -31,7 +33,6 @@ public class Cliente extends Humane {
             System.out.println("El producto \"" + producto.getNombre() + "\" esta sin stock");
         } 
     }
-    
     
     @Override
     public String toString(){

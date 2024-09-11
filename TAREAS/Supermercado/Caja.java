@@ -1,7 +1,8 @@
-package tarea;
+package tarea.supermercado;
 
 import lombok.*;
 
+// Uso de lombok para generar codigo repetitivo
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter @Setter

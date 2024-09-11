@@ -1,4 +1,9 @@
-package tarea;
+package tarea.supermercado;
+
+/**
+ * Esta clase pretende la simulacion de un supermercado
+ * @author Diego
+ */
 
 public class Principal {
 
@@ -29,7 +34,7 @@ public class Principal {
         cliente1.comprarProductos(p4, 4);
         
         // El cliente N°1 realiza la compra
-        Compra compra1 = new Compra(caja1, cliente1, cliente1.getProductosComprados());
+        Compra compra1 = new Compra(caja1, cliente1, cliente1.getListaDeCompras());
         
         // Imprimo el ticket
         compra1.imprimirTicket();
@@ -38,6 +43,11 @@ public class Principal {
         System.out.println("");
         
         // ***********************************************************************************
+        
+        Empleado emp2 = new Empleado("Roberto", "Lopez", 345, 1000);
+        
+        Caja caja2 = new Caja(emp2, 2);
+        
         // Creo el cliente N°2
         Cliente cliente2 = new Cliente("Esteban", "Gomez", 2551, false);
         
@@ -47,7 +57,7 @@ public class Principal {
         cliente2.comprarProductos(p1, 8);
         
         // El cliente N°2 realiza la compra
-        Compra compra2 = new Compra(caja1, cliente2, cliente2.getProductosComprados());
+        Compra compra2 = new Compra(caja2, cliente2, cliente2.getListaDeCompras());
         
         // Imprimo el ticket
         compra2.imprimirTicket();

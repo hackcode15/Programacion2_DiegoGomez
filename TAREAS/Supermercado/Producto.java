@@ -1,4 +1,4 @@
-package tarea;
+package tarea.supermercado;
 
 import lombok.*;
 
